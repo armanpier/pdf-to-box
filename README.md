@@ -93,6 +93,10 @@ $$\text{scale}_v = -\frac{\text{scale}_y}{H_{\text{tex}}}, \quad \text{offset}_v
 - Autodesk 3ds Max 2024 (optional for headless alignment / verification)
 
 ### Setup
+#### Option A: 1-Click Windows Setup (Recommended)
+Simply double-click **`setup.bat`** (or `install_requirements.bat`). It will automatically check Python, upgrade `pip`, install all dependencies from `requirements.txt`, and verify core modules.
+
+#### Option B: Manual Setup
 ```bash
 git clone https://github.com/armanpier/pdf-to-box.git
 cd pdf-to-box
@@ -104,10 +108,11 @@ pip install -r requirements.txt
 ## Quick Start
 
 ### 1. Launch GUI Application
-Double-click `run_app.bat` or run:
+Double-click **`run_app.bat`** or run:
 ```bash
 python main.py
 ```
+*(Note: If dependencies have not been installed yet, `run_app.bat` will automatically invoke `setup.bat` before launching the application.)*
 
 ### 2. Run Headless CLI Pipeline
 ```bash
